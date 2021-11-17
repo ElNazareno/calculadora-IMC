@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".salud"
+    android:background="@drawable/fffff">
+
+    <LinearLayout
+        android:id="@+id/textos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FDEDFF"
+            android:text="Salud"
+            android:textSize="40dp"
+            android:gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/txtNom"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Nombre."
+            android:gravity="start|center"
+            android:textStyle="normal"
+            android:textColor="#FDEDFF"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/txtPeso"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Peso en Kg.(75)"
+            android:gravity="start|center"
+            android:textStyle="normal"
+            android:textColor="#FDEDFF"
+            android:textSize="15dp"/>
+        <EditText
+            android:id="@+id/txtAltura"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Altura en m (1.75)"
+            android:gravity="start|center"
+            android:textStyle="normal"
+            android:textColor="#FDEDFF"
+            android:textSize="15dp"/>
+
+        <RadioGroup
+            android:id="@+id/fila1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rbVaron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FDEDFF"
+                android:textStyle="bold"
+                android:text="varon" />
+            <RadioButton
+                android:id="@+id/rbMujer"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FDEDFF"
+                android:textStyle="bold"
+                android:text="Mujer" />
+        </RadioGroup>
+
+
+
+        <LinearLayout
+            android:id="@+id/fila2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btncalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="#FDEDFF"
+                style="?attr/materialButtonOutlinedStyle"
+                android:text="calcular"/>
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="#FDEDFF"
+                style="?attr/materialButtonOutlinedStyle"
+                android:text="limpiar"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtWenas"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="#FDEDFF"
+            android:text="hola"
+            android:textSize="16dp"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/fila3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConsejo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="#FDEDFF"
+                style="?attr/materialButtonOutlinedStyle"
+                android:text="Consejo"
+                android:onClick="consejo"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

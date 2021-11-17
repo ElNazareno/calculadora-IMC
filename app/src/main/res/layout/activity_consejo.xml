@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".consejo"
+    android:background="@drawable/fffff">
+    <LinearLayout
+        android:id="@+id/textos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FDEDFF"
+            android:text="Consejo"
+            android:textSize="40dp"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/fila1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblName"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Nombre:"
+                android:gravity="start|center"
+                android:textStyle="bold"
+                android:textColor="#FDEDFF"
+                android:textSize="17dp"
+                />
+            <TextView
+                android:id="@+id/txtNombree"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=".."
+                android:gravity="start|center"
+                android:textStyle="normal"
+                android:textColor="#FDEDFF"
+                android:textSize="17dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fila2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblpeso"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Peso:"
+                android:gravity="start|center"
+                android:textStyle="bold"
+                android:textColor="#FDEDFF"
+                android:textSize="17dp"
+                />
+            <TextView
+                android:id="@+id/txtPeso"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=".."
+                android:gravity="start|center"
+                android:textStyle="normal"
+                android:textColor="#FDEDFF"
+                android:textSize="17dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fila3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblALt"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Altura:"
+                android:gravity="start|center"
+                android:textStyle="bold"
+                android:textColor="#FDEDFF"
+                android:textSize="17dp"
+                />
+            <TextView
+                android:id="@+id/txtAltura"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=".."
+                android:gravity="start|center"
+                android:textStyle="normal"
+                android:textColor="#FDEDFF"
+                android:textSize="17dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fila4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="IMC:"
+                android:gravity="start|center"
+                android:textStyle="bold"
+                android:textColor="#FDEDFF"
+                android:textSize="17dp"
+                />
+            <TextView
+                android:id="@+id/txtImc"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=".."
+                android:gravity="start|center"
+                android:textStyle="normal"
+                android:textColor="#FDEDFF"
+                android:textSize="17dp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Consejo:"
+            android:gravity="start|center"
+            android:textStyle="bold"
+            android:textColor="#FDEDFF"
+            android:textSize="17dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txvCons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#FDEDFF"
+                android:gravity="start|top"
+                android:editable="false"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
